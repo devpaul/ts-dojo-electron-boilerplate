@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hello World!</title>
+	</head>
+	<body>
+		<h1>Hello World!</h1>
+
+		<script>
+			/* the boot script will look for this variable, and if present
+			 * load the modules supplied in mids and then run the callback
+			 * function
+			 */
+			const boot = {
+				mids: [ 'dojo/query', 'app/config' ],
+				callback: function (query, config) {
+					config = config.default;
+
+					console.log(query('h1'));
+
+					require = config.dojoRequire;
+
+					/* use the host require to require in the host logging module */
+					const hostRequire = config.hostRequire;
+					hostRequire([ 'app/log' ], function (log) {
+						log = log.default;
+						log.info('loaded window');
+					});
+				}
+			};
+
+			/* boot the environment */
+			require('../../boot/chromium');
+		</script>
+	</body>
+</html>

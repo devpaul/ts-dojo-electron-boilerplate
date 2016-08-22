@@ -1,0 +1,9 @@
+.idea
+*.iml
+dist
+_build
+_stage
+boot/*.js
+node_modules
+html-report
+typings

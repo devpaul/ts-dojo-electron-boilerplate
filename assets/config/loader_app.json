@@ -1,0 +1,6 @@
+{
+	"packages": [
+		{ "name": "app", "location": "../src" },
+		{ "name": "dojo-core", "location": "../node_modules/dojo-core/dist/umd" }
+	]
+}

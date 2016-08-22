@@ -1,0 +1,8 @@
+{
+	"name": "BoilerPlate",
+	"debug": true,
+	"logLevel": "info",
+	"boot": [
+		"app/app"
+	]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ts-electron-dojo",
+  "dependencies": {},
+  "globalDependencies": {
+    "bunyan": "registry:dt/bunyan#0.0.0+20160412155112",
+    "dojo-core": "npm:dojo-core",
+    "dojo-has": "npm:dojo-has",
+    "dojo-shim": "npm:dojo-shim",
+    "github-electron": "registry:dt/github-electron#1.2.5+20160812193136"
+  },
+  "globalDevDependencies": {
+    "node": "github:dojo/typings/custom/node/node.d.ts#a62873258aa1deed48f9882c193c335436100d4b",
+    "symbol-shim": "github:dojo/typings/custom/symbol-shim/symbol-shim.d.ts#9a0185f465a3febe2bb1ff3f1210f43e5f96c5d2"
+  }
+}

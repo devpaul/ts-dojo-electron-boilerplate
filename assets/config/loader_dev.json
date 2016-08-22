@@ -1,0 +1,8 @@
+{
+	"packages": [
+		{ "name": "app", "location": "../_build/src" },
+		{ "name": "dojo-core", "location": "../node_modules/dojo-core/dist/umd" },
+		{ "name": "dojo-shim", "location": "../node_modules/dojo-shim/dist/umd" },
+		{ "name": "dojo-has", "location": "../node_modules/dojo-has/dist/umd" }
+	]
+}
